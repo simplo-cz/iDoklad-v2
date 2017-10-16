@@ -4,10 +4,24 @@ PHP třída pro zasílání požadavků na iDoklad api v2.
 [Dokumentace iDoklad api v2](https://app.idoklad.cz/Developer/Help)
 
 ## Vložení knihovny do projektu
-Knihovnu vložíme do projektu naincludováním souboru src/iDoklad.php, nebo si knihovnu přidáme pomocí composeru. Následně se na knihovnu odkážeme pomocí use.
+Nejprve vložíme repozitář do composer.json v kořenu našeho projektu.
 ```php
-composer require simplo-cz/idoklad-v2
+"repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/simplo-cz/iDoklad-v2"
+        }
+    ]
 ```
+Následně vložíme knihovnu mezi požadované knihovny
+```php
+"require": {
+        ...
+        ...
+        "simplo-cz/idoklad-v2": "*"
+    },
+```
+## Použití
 Zadáme naše client ID, client secret a v případě, že chceme použít OAuth2 autentifikaci i redirect URI. Nakonec si zavoláme objekt iDokladu, který zajišťuje veškerou komunikaci.
 ```php            
 use malcanek\iDoklad\iDoklad;
