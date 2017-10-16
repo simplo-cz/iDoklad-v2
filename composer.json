@@ -1,8 +1,8 @@
 {
-    "name": "malcanek/idoklad-v2",
+    "name": "simplo-cz/idoklad-v2",
     "description": "PHP třída pro ulehčení požadavků na iDoklad api v2.",
     "keywords": ["idoklad", "fakturace"],
-    "homepage": "https://github.com/malcanek/iDoklad-v2",
+    "homepage": "https://github.com/simplo-cz/iDoklad-v2",
     "license": "MIT",
     "authors": [
         {
@@ -10,12 +10,17 @@
             "email": "jan@malcanek.cz",
             "homepage": "http://www.malcanek.cz",
             "role": "Author"
+        },
+        {
+            "name": "Lukáš Pelánek",
+            "email": "pelanek@simplo.cz",
+            "role": "Author"
         }
     ],
     "autoload": {
-        "psr-4": {"malcanek\\iDoklad\\": "src/"}
+        "psr-4": {"simplo\\iDoklad\\": "src/"}
     },
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=7.1.0"
     }
 }
