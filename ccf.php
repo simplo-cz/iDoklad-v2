@@ -4,9 +4,9 @@ $cs = 'Your client secret from user settings';
 
 include_once 'v2/iDoklad.php';
             
-use malcanek\iDoklad\iDoklad;
-use malcanek\iDoklad\auth\iDokladCredentials;
-use malcanek\iDoklad\iDokladException;
+use simplo\iDoklad\iDoklad;
+use simplo\iDoklad\auth\iDokladCredentials;
+use simplo\iDoklad\iDokladException;
 
 try{
     $iDoklad = new iDoklad($cid, $cs, '');

@@ -6,7 +6,7 @@
  * @author Jan Malcanek
  */
 
-namespace malcanek\iDoklad\auth;
+namespace simplo\iDoklad\auth;
 
 class iDokladCredentials {
     

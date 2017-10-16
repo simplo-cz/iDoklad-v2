@@ -6,7 +6,7 @@
  * @author Jan Malcanek
  */
 
-namespace malcanek\iDoklad;
+namespace simplo\iDoklad;
 
 include_once __DIR__.'/auth/iDokladAuth.php';
 include_once __DIR__.'/auth/iDokladCredentials.php';

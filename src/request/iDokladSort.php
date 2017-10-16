@@ -5,9 +5,9 @@
  * @author Jan Malcánek
  */
 
-namespace malcanek\iDoklad\request;
+namespace simplo\iDoklad\request;
 
-use malcanek\iDoklad\iDokladException;
+use simplo\iDoklad\iDokladException;
 
 class iDokladSort {
     

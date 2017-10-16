@@ -6,9 +6,9 @@
  * @author Jan Malcanek
  */
 
-namespace malcanek\iDoklad\auth;
+namespace simplo\iDoklad\auth;
 
-use malcanek\iDoklad\iDokladException;
+use simplo\iDoklad\iDokladException;
 
 class iDokladAuth {
     

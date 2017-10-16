@@ -5,7 +5,7 @@
  * @author Jan Malcánek
  */
 
-namespace malcanek\iDoklad\request;
+namespace simplo\iDoklad\request;
 
 include_once __DIR__.'/iDokladFilter.php';
 include_once __DIR__.'/iDokladSort.php';
