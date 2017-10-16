@@ -72,12 +72,12 @@ class iDokladResponse {
     public function __construct($rawOutput, $headerSize, $code) {
         $this->code = $code;
         $this->headers = substr($rawOutput, 0, $headerSize);
-        
+
         $parsed = $this->parseJSON(trim(substr($rawOutput, $headerSize)));
-        $this->data = $parsed['Data'];
-        $this->links = $parsed['Links'];
-        $this->totalItems = $parsed['TotalItems'];
-        $this->totalPages = $parsed['TotalPages'];
+        $this->data = $parsed['Data'] ?? $parsed;
+        $this->links = $parsed['Links'] ?? null;
+        $this->totalItems = $parsed['TotalItems'] ?? null;
+        $this->totalPages = $parsed['TotalPages'] ?? null;
     }
     
     /**
