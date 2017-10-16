@@ -24,9 +24,9 @@ Následně vložíme knihovnu mezi požadované knihovny
 ## Použití
 Zadáme naše client ID, client secret a v případě, že chceme použít OAuth2 autentifikaci i redirect URI. Nakonec si zavoláme objekt iDokladu, který zajišťuje veškerou komunikaci.
 ```php            
-use malcanek\iDoklad\iDoklad;
-use malcanek\iDoklad\auth\iDokladCredentials;
-use malcanek\iDoklad\iDokladException;
+use simplo\iDoklad\iDoklad;
+use simplo\iDoklad\auth\iDokladCredentials;
+use simplo\iDoklad\iDokladException;
 
 $clientId = 'Your client ID';
 $clientSecret = 'Your client secret';
