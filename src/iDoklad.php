@@ -16,13 +16,13 @@ include_once __DIR__.'/request/iDokladResponse.php';
 include_once __DIR__.'/request/iDokladFilter.php';
 include_once __DIR__.'/request/iDokladSort.php';
 
-use malcanek\iDoklad\auth\iDokladAuth;
-use malcanek\iDoklad\iDokladException;
-use malcanek\iDoklad\request\iDokladRequest;
-use malcanek\iDoklad\request\iDokladResponse;
-use malcanek\iDoklad\auth\iDokladCredentials;
-use malcanek\iDoklad\request\iDokladFilter;
-use malcanek\iDoklad\request\iDokladSort;
+use simplo\iDoklad\auth\iDokladAuth;
+use simplo\iDoklad\iDokladException;
+use simplo\iDoklad\request\iDokladRequest;
+use simplo\iDoklad\request\iDokladResponse;
+use simplo\iDoklad\auth\iDokladCredentials;
+use simplo\iDoklad\request\iDokladFilter;
+use simplo\iDoklad\request\iDokladSort;
 
 class iDoklad {
     
