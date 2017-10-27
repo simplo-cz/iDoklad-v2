@@ -75,7 +75,7 @@ class iDokladAuth {
     /**
      * Chooses authenticate method and gets credentials
      * @param string $authType
-     * @param \malcanek\iDoklad\auth\iDokladCredentials $credentials
+     * @param \simplo\iDoklad\auth\iDokladCredentials $credentials
      * @throws iDokladException
      */
     public function auth($authType = 'oauth2', iDokladCredentials $credentials = null) {
@@ -203,7 +203,7 @@ class iDokladAuth {
     
     /**
      * Sets iDokladCredentials to provide authentication
-     * @param \malcanek\iDoklad\auth\iDokladCredentials $credentials
+     * @param \simplo\iDoklad\auth\iDokladCredentials $credentials
      */
     public function setCredentials(iDokladCredentials $credentials){
         $this->credentials = $credentials;

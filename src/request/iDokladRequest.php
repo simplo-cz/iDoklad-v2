@@ -10,9 +10,9 @@ namespace simplo\iDoklad\request;
 include_once __DIR__.'/iDokladFilter.php';
 include_once __DIR__.'/iDokladSort.php';
 
-use malcanek\iDoklad\iDokladException;
-use malcanek\iDoklad\request\iDokladFilter;
-use malcanek\iDoklad\request\iDokladSort;
+use simplo\iDoklad\iDokladException;
+use simplo\iDoklad\request\iDokladFilter;
+use simplo\iDoklad\request\iDokladSort;
 
 class iDokladRequest {
     
@@ -75,7 +75,7 @@ class iDokladRequest {
     /**
      * Sets api method (e.g. IssuedInvoices)
      * @param string $method
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function setMethod($method){
         $this->method = $method;
@@ -85,7 +85,7 @@ class iDokladRequest {
     /**
      * Sets api response language
      * @param string $lang
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function setLang($lang){
         $this->lang = $lang;
@@ -95,7 +95,7 @@ class iDokladRequest {
     /**
      * Adds request post parameters from array
      * @param array $params
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function addPostParameters(array $params){
         $this->postParams = $params;
@@ -106,7 +106,7 @@ class iDokladRequest {
      * Adds request post parameter by key and value
      * @param string $key
      * @param string $value
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function addPostParameter($key, $value){
         $this->postParams[$key] = $value;
@@ -116,7 +116,7 @@ class iDokladRequest {
     /**
      * Adds request get parameters
      * @param array $params
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function addGetParameters(array $params){
         $this->getParams = $params;
@@ -127,7 +127,7 @@ class iDokladRequest {
      * Adds reuqest get parameters by key and value
      * @param string $key
      * @param string $value
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function addGetParameter($key, $value){
         $this->getParams[$key] = $value;
@@ -137,7 +137,7 @@ class iDokladRequest {
     /**
      * Sets method type (e.g. GET, POST)
      * @param string $methodType
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function addMethodType($methodType){
         $this->methodType = $methodType;
@@ -146,8 +146,8 @@ class iDokladRequest {
     
     /**
      * Adds data filter
-     * @param \malcanek\iDoklad\request\iDokladFilter $filter
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @param \simplo\iDoklad\request\iDokladFilter $filter
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function addFilter(iDokladFilter $filter){
         $this->filters[] = $filter;
@@ -156,8 +156,8 @@ class iDokladRequest {
     
     /**
      * Adds data sort
-     * @param \malcanek\iDoklad\request\iDokladSort $sort
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @param \simplo\iDoklad\request\iDokladSort $sort
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function addSort(iDokladSort $sort){
         $this->sorts[] = $sort;
@@ -167,7 +167,7 @@ class iDokladRequest {
     /**
      * Declares page from pagination
      * @param int $page
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function setPage($page){
         $this->getParams['page'] = $page;
@@ -177,7 +177,7 @@ class iDokladRequest {
     /**
      * Declares number of returned items by request
      * @param int $pageSize
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      */
     public function setPageSize($pageSize){
         $this->getParams['pagesize'] = $pageSize;
@@ -187,7 +187,7 @@ class iDokladRequest {
     /**
      * Sets filter type allowed and and or
      * @param string $type
-     * @return \malcanek\iDoklad\request\iDokladRequest
+     * @return \simplo\iDoklad\request\iDokladRequest
      * @throws iDokladException
      */
     public function setFilterType($type){

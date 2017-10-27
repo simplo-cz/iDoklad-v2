@@ -18,7 +18,7 @@ try{
     } 
     $credentials = new iDokladCredentials(file_get_contents('credentials.json'), true);
     $iDoklad->setCredentials($credentials);
-    $request = new \malcanek\iDoklad\request\iDokladRequest('IssuedInvoices');
+    $request = new \simplo\iDoklad\request\iDokladRequest('IssuedInvoices');
     $response = $iDoklad->sendRequest($request);
     echo '<pre>';
     print_r($response);
